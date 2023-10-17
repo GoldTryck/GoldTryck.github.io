@@ -1,0 +1,306 @@
+.img-logo{
+    width: 10rem;
+}
+/*Barra de navegacion*/
+.navbar-nav .nav-item a.nav-link {
+    font-size: 1rem;
+    color:  #BA6429 !important;
+  }  
+.navbar{
+    padding: 0.5rem;
+    background-color: #ffffff;
+    
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Resposive*/
+@media screen and (max-width: 768px){ 
+    .navbar-brand{
+        display: none;
+    }
+}
+@media screen and (min-width: 700px){
+    .hero-inf-img{
+        max-width: 600px;
+    }
+}
+/*Estilos generales*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 2.5rem;
+    color: #615151;
+}
+.entre-imagen{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.dark{
+    color: #f7f2e1;
+    background-color: rgb(42, 22, 7);
+}
+.light{
+    color:rgb(42, 22, 7);
+    background-color: #f7f2e1;
+}
+/*hero*/
+.hero{
+    background-color: #f7f2e1;
+    min-height: 450px;
+    text-align: center;
+}
+.hero-principal{
+    padding: 3rem;
+}
+.imagen-principal{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 10px;
+}
+.hero-principal h2{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 2rem;
+    color: #615151;
+}
+/*about us*/
+.about-us{
+    height: 400px;
+    padding: 10px;
+}
+.about-us .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+.seccion-titulo{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 2rem;
+    padding: 15px 0;
+}
+.seccion-texto{
+    font-size: 1rem;
+}
+
+/*Menu productos*/
+
+.menu-productos{
+    padding: 200px;
+}
+.menu-productos .row{
+    height: 300px;
+    background-color: #BA6429;
+    border: 3px solid greenyellow;
+}
+/* Carruseles*/
+.carousel h2{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.tabla-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5a623;
+}
+.select{
+    padding: 1% 0% 1% 0%;
+    background-color: rgb(49, 41, 41);
+}
+.btn-secondary{
+    background-color: #f7f2e1;
+    color: #ba6429;
+    height: 100%;
+    width: 100%;
+}
+.btn-menu-container{
+    background-color: red;
+}
+
+
+
+
+
+
+/* Feed instagram*/
+#feed-contenedor{
+    background-color: #f7f2e1;
+    margin: 5rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+.main-galery{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.contenedor-galery{
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.chevron span{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    font-size: 2rem;
+    color: rgb(157, 217, 238);
+    width: 4.3rem;
+    height: 4.7rem;
+    background-color: salmon;
+    border: 100%;
+    cursor: pointer;
+}
+
+.chevron span:hover{
+    background-color: rgba(23,23,23,0.6);
+}
+.chevron #prev{
+    padding-right: .5rem;
+    justify-content: flex-end;
+    left: -1.7rem;
+    border-radius: 50%;
+}
+.chevron #next{
+    padding-right: .5rem;
+    justify-content: flex-start;
+    right: -1.7rem;
+    border-radius: 50%;
+}
+.galery{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.image{
+    min-width: 50%;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.image:hover .opacity-hover{
+    width: 100%;
+} 
+.caption{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: translateY(300px);
+    transition: transform 100ms linear;
+}
+
+.caption p{
+    color: #f7f2e1;
+    width: 80%;
+}
+.opacity-hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: background-color 300ms linear;
+}
+.opacity-hover:hover{
+    background-color: rgba(2,2,2,0.8);
+}
+
+.opacity-hover:hover .caption{
+    transform: translateY(0px); 
+}
+/* Boton follow us*/
+.container-title{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+}
+.feed-imsta{
+    width: 100%;
+    height: 100px;
+}
+.row-title{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+.redes-sociales{
+    background-color: white;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f2e1;
+    border-radius: 0px;
+    align-items: space-between;
+}
+  .col-redes{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+  }
+  .container-redes{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+  }
+  .card-title {
+    color: #2b1a0c;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #3e2b19;
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #f5a623;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .card-img-top {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    ;
+  }
+
+  .creditos p{
+    text-align: right;
+    font-size: 0.7rem;
+    color: #615151;
+  }
+  .creditos .container-creditos{
+    padding: 1rem;
+    background-color: white;
+  }
